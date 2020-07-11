@@ -516,6 +516,9 @@ a {
   padding: 24px 80px;
   color: #fff;
 }
+#header .header__content .content__block .block__button:hover {
+  cursor: pointer;
+}
 #header .header__content .content__img {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
@@ -961,6 +964,9 @@ a {
   font-size: 16px;
   line-height: 24px;
 }
+#what-we-do .order-box__titles .button-div .order-button:hover {
+  cursor: pointer;
+}
 #what-we-do .order-box__titles .button-div .button_desc {
   margin: 0;
   padding: 0;
@@ -1210,6 +1216,9 @@ a {
   line-height: 24px;
   border: none;
   margin-top: 20px;
+}
+#calculation .calculator__form button:hover {
+  cursor: pointer;
 }
 #calculation .calculation-warning {
   margin-top: 20px;
