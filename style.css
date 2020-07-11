@@ -375,6 +375,11 @@ a {
   padding: 0;
   width: 81.3%;
 }
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+}
 #header {
   position: relative;
   padding-top: 34px;
@@ -514,10 +519,12 @@ a {
   #header .header__content {
     flex-direction: column;
     padding: 80px 0 80px 0;
-    text-align: center;
   }
   #header .header__content .content__block {
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 1350px) {
@@ -546,7 +553,8 @@ a {
     top: 0;
     right: -60px;
   }
-  #header .burger:hover .burger__nav {
+  #header .burger:hover .burger__nav,
+  #header .burger:active .burger__nav {
     display: block;
     width: 250px;
     border-radius: 5px;
@@ -555,10 +563,12 @@ a {
     top: calc(100% + 1px);
     z-index: 100;
   }
-  #header .burger:hover .burger__nav li {
+  #header .burger:hover .burger__nav li,
+  #header .burger:active .burger__nav li {
     margin: 15px 0 15px 25px;
   }
-  #header .burger:hover .burger__nav li:hover a {
+  #header .burger:hover .burger__nav li:hover a,
+  #header .burger:active .burger__nav li:hover a {
     background: #ccc;
     color: #fff;
   }
@@ -570,6 +580,9 @@ a {
   .header__menu {
     justify-content: flex-start;
   }
+}
+#internet {
+  padding-bottom: 183px;
 }
 #internet .internet-container {
   display: flex;
@@ -624,6 +637,9 @@ a {
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 79px;
+}
+#internet .internet__аdvantages p:last-child {
+  margin-bottom: 0;
 }
 #internet .internet__аdvantages .item_construct {
   width: 175px;
@@ -733,10 +749,11 @@ a {
   flex-basis: 500px;
 }
 #what-we-do .what-we-do__titles h2 {
-  margin: 15px;
+  margin: 0 0 15px 0;
   font-weight: bold;
   font-size: 30px;
   line-height: 40px;
+  width: 100%;
 }
 #what-we-do .what-we-do__titles p {
   font-weight: normal;
@@ -762,6 +779,14 @@ a {
 }
 #what-we-do .what-we-do__titles ul li:last-child {
   color: #E46868;
+}
+@media (max-width: 950px) {
+  #what-we-do .what-we-do__titles h2 {
+    font-size: 20px;
+  }
+  #what-we-do .what-we-do__titles p {
+    font-size: 10px;
+  }
 }
 #what-we-do .tsekh {
   background-image: url(img/src/img/section_3/tsekh.svg);
@@ -789,6 +814,7 @@ a {
   background-repeat: no-repeat;
 }
 #what-we-do .order-box {
+  padding-bottom: 85px;
   margin-top: 172px;
   width: 100%;
   height: 495px;
@@ -998,7 +1024,7 @@ a {
   color: #fff;
 }
 #calculation .cost .cost-title {
-  width: 265px;
+  width: 315px;
   margin: 0;
 }
 #calculation .cost .cost-per-hour {
